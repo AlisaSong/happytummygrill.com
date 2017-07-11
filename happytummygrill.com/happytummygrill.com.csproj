@@ -72,6 +72,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="happyTummyGrill.css" />
+    <Content Include="images\favicon.ico" />
     <Content Include="images\texture.png" />
     <Content Include="index.html" />
     <Content Include="happyTummyGrill.js" />
