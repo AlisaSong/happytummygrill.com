@@ -5,6 +5,7 @@
 }
 
 body {
+    background-image: url("images/texture.png");
     font-family: Georgia, serif;
     margin: 10px 0 0 0;
     text-align: center;
