@@ -11,8 +11,6 @@ body {
     text-align: center;
 }
 
-
-
 ul {
     list-style-type: none;
     margin: 2px 0;
@@ -34,11 +32,9 @@ ul li {
 
 #navigation {
     font-family: Georgia, serif;
-    font-size: 
 }
 
 #title {
-    font-family: asenine, serif;
     font-size: 32px;
     font-weight: bold;
     white-space: nowrap;
