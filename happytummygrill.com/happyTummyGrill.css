@@ -6,7 +6,7 @@
 
 body {
     background-image: url("images/texture.png");
-    font-family: Georgia, serif;
+    font-family: Helvetica, serif;
     margin: 10px 0 0 0;
     text-align: center;
 }
@@ -32,8 +32,11 @@ ul li {
     opacity: 0.6;
 }
 
+#navigation {
+    font-family: Georgia, serif;
+}
+
 #title {
-    font-family: 'Courier New';
     font-size: 32px;
     font-weight: bold;
     white-space: nowrap;
