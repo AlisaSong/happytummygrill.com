@@ -92,6 +92,10 @@
     <Content Include="font-awesome-4.7.0\fonts\FontAwesome.otf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="font-asenine\ASENINE_.ttf" />
+    <Content Include="font-asenine\ASENST__.ttf" />
+    <Content Include="font-asenine\ASENT___.ttf" />
+    <Content Include="font-asenine\ASENW___.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
