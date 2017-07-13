@@ -73,7 +73,7 @@
     </Content>
     <Content Include="happyTummyGrill.css" />
     <Content Include="images\favicon.ico" />
-    <Content Include="images\texture.png" />
+    <Content Include="images\logo.PNG" />
     <Content Include="index.html" />
     <Content Include="happyTummyGrill.js" />
     <Content Include="packages.config" />
