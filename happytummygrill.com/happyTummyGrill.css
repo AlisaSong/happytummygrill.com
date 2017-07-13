@@ -5,7 +5,6 @@
 }
 
 body {
-    background-image: url("images/texture.png");
     font-family: Arial, Helvetica, sans-serif;
     margin: 100px 0 0 0;
     text-align: center;
@@ -35,7 +34,13 @@ ul li {
 }
 
 #title {
+    background-color: white;
     font-size: 32px;
     font-weight: bold;
+    height: 100px;
+    position: fixed;
+    top: 0;
     white-space: nowrap;
+    width: 100%;
+    z-index: 10;
 }
