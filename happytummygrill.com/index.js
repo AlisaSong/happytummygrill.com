@@ -1,5 +1,9 @@
-﻿"use strict";
+﻿(function () {
 
-window.addEventListener('load', function () {
-    
-})
+    'use strict';
+
+    window.addEventListener('load', function () {
+
+    })
+
+})();
