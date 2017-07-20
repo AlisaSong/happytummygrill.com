@@ -90,3 +90,6 @@ Chicken 1 piece... 2.75
 Prawn 3 pieces on 1 skewer...3.75
 Chicken Katsu 1 piece... 3.50
 To-Go Salad... 1.99
+
+
+    background-color: #A9A9A9;

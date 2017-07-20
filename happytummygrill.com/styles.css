@@ -14,10 +14,21 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 300px;
 }
 
 ul li {
     display: inline;
+}
+
+#logo-main {
+    height: 55px;
+    width: auto;
+}
+
+#logo-wrapper {
+    float: left;
+    padding: 2px 7% 3px 0;
 }
 
 #main-photo {
@@ -25,16 +36,20 @@ ul li {
 }
 
 #navigation {
-    background-color: #A9A9A9;
+    background-color: #fff;
     font-size: 18px;
-    height: 55px;
-    line-height: 55px;
-    opacity: 0.6;
+    height: 60px;
+    line-height: 60px;
     position: fixed;
     top: 0;
     white-space: nowrap;
     width: 100%;
     z-index: 10;
+}
+
+#navigation-wrapper {
+    margin: 0 auto;
+    width: 500px;
 }
 
 #title {
