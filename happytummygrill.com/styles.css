@@ -6,6 +6,7 @@
 
 body {
     font-family: Habibi, sans-serif;
+    font-size: 14px;
     margin: 55px 0 0 0;
     text-align: center;
 }
@@ -14,7 +15,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 300px;
 }
 
 ul li {
@@ -35,6 +35,12 @@ ul li {
     width: 100%;
 }
 
+#menu-btn-wrapper {
+    height: 120px;
+    margin: 0 auto;
+    width: 75%;
+}
+
 #navigation {
     background-color: #fff;
     font-size: 18px;
@@ -45,6 +51,10 @@ ul li {
     white-space: nowrap;
     width: 100%;
     z-index: 10;
+}
+
+#navigation-options {
+    width: 300px;
 }
 
 #navigation-wrapper {
@@ -79,6 +89,28 @@ ul li {
 .hvr-grow:focus,
 .hvr-grow:active {
     transform: scale(1.1);
+}
+
+.menu-btn {
+    display: inline-block;
+    font-size: 16px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 19%;
+}
+
+.menu-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.menu-btn-selected {
+    background-color: #f5e6e8;
+}
+
+.menu-btn-selected:hover {
+    opacity: 1;
 }
 
 @font-face {

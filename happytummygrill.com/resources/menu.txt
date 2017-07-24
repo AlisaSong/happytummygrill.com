@@ -1,4 +1,7 @@
-﻿Teriyaki
+﻿
+
+//
+Teriyaki
 Served with fresh salad and steamed rice
 
 1. Special Chicken... 5.75
@@ -37,20 +40,25 @@ Served with fresh salad and steamed rice
 19. Chicken with 1 Prawn Skewer... 8.99
 20. Beef with 1 Prawn Skewer... 9.99
 
+
+//
 Yakisoba
 21. Chicken... 7.95
 22. Pork or Tofu... 8.50
 23. Beef or Shrimp... 8.95
+
 
 Fried Rice
 24. Chicken or Kimchee... 7.95
 25. Pork or Tofu... 8.50
 26. Beef or Shrimp... 8.95
 
+//
 Stir Fry
 27. Chicken... 7.95
 28. Pork... 8.50
 29. Beef or Shrimp... 8.95
+
 
 Chinese Express
 Served with steamed rice
@@ -64,6 +72,8 @@ Served with steamed rice
 37. Orange Chicken or Pork... 7.99
 38. General Tsao's Chicken or Pork... 7.99
 
+
+//
 Noodle Soup
 01. Ramen with Chicken... 7.50
 Ramen with Beef... 7.99
@@ -78,6 +88,7 @@ Salads
 05. Garden Salad... 3.50
 06. Steamed Veggies... 3.75
 
+//
 Side Orders
 Prawn Tempura 5 pieces... 5.99
 Egg Rolls 2 pieces... 3.99
@@ -93,3 +104,6 @@ To-Go Salad... 1.99
 
 
     background-color: #A9A9A9;
+
+light wine color: #f5e6e8
+wine color: #722f37 
