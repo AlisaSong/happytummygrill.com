@@ -74,6 +74,7 @@
     <Content Include="lib\font-awesome-4.7.0\fonts\fontawesome-webfont.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="resources\menu.json" />
     <Content Include="resources\menu.txt" />
     <Content Include="styles.css" />
     <Content Include="images\favicon.ico">

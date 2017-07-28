@@ -2,29 +2,44 @@
 
     'use strict';
 
-    var menuButtons = [
-        'menu-teriyaki-combinations',
-        'menu-yakisoba-fried-rice',
-        'menu-stir-fry-chinese-express',
-        'menu-noodle-soup-salads',
-        'menu-side-orders'
+    var PREFIX_BUTTON = 'btn-';
+    var PREFIX_TABLE = 'tbl-';
+
+    var menuSections = [
+        'teriyaki-combinations',
+        'yakisoba-fried-rice',
+        'stir-fry-chinese-express',
+        'noodle-soup-salads',
+        'side-orders'
     ];
 
-    var selectedMenuButtonIndex = 0;
+    var selectedMenuSectionIndex = 0;
 
     window.addEventListener('load', function () {
-        for (var i = 0; i < menuButtons.length; i++) {
-            document.getElementById(menuButtons[i]).addEventListener('click', clickMenuButton);
+        for (var i = 0; i < menuSections.length; i++) {
+            document.getElementById(PREFIX_BUTTON + menuSections[i]).addEventListener('click', clickMenuButton);
         }
+
+        http('GET', 'resources/menu.json', function () {
+            console.log(this.responseText);
+        });
     });
 
     function clickMenuButton() {
         var clickedId = this.id;
-        var selectedMenuButton = document.getElementById(menuButtons[selectedMenuButtonIndex]);
-        if (clickedId != selectedMenuButton.id) {
-            selectedMenuButton.classList.remove('menu-btn-selected');
+        var selectedId = PREFIX_BUTTON + menuSections[selectedMenuSectionIndex];
+
+        if (clickedId !== selectedId) {
+            document.getElementById(selectedId).classList.remove('menu-btn-selected');
             this.classList.add('menu-btn-selected');
-            selectedMenuButtonIndex = menuButtons.indexOf(clickedId);
+            selectedMenuSectionIndex = menuSections.indexOf(clickedId.substr(PREFIX_BUTTON.length));
         }
+    }
+
+    function http(method, url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.open(method, url);
+        xhr.onreadystatechange = callback;
+        xhr.send();
     }
 })();

@@ -1,7 +1,4 @@
-﻿
-
-//
-Teriyaki
+﻿Teriyaki
 Served with fresh salad and steamed rice
 
 1. Special Chicken... 5.75
@@ -70,7 +67,7 @@ Served with steamed rice
 35. Broccoli Chicken... 7.99
 36. Tofu Vegetable... 8.25
 37. Orange Chicken or Pork... 7.99
-38. General Tsao's Chicken or Pork... 7.99
+38. General Tsao"s Chicken or Pork... 7.99
 
 
 //
