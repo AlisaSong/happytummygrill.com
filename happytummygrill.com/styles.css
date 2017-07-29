@@ -113,8 +113,20 @@ ul li {
     opacity: 1;
 }
 
+.menu-section {
+    display: none;
+}
+
+.menu-section-selected{
+    display: block;
+}
+
+@font-face {
+    font-family: fareast;
+    src: url(fonts/fareast.ttf);
+}
+
 @font-face {
     font-family: Habibi;
     src: url(fonts/Habibi-Regular.ttf);
 }
-

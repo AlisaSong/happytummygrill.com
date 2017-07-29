@@ -4,7 +4,7 @@
             "sections": [
                 {
                     "description": "Served with fresh salad and steamed rice",
-                    "section": [
+                    "items": [
                         {
                             "description": "Charbroiled, marinated boneless chicken",
                             "id": "1",
@@ -92,7 +92,7 @@
                 },
                 {
                     "description": "Served with fresh salad and steamed rice",
-                    "section": [
+                    "items": [
                         {
                             "id": "15",
                             "name": "Chicken & Pork",
@@ -131,7 +131,7 @@
         {
             "sections": [
                 {
-                    "section": [
+                    "items": [
                         {
                             "id": "21",
                             "name": "Chicken",
@@ -151,7 +151,7 @@
                     "title": "Yakisoba"
                 },
                 {
-                    "section": [
+                    "items": [
                         {
                             "id": "24",
                             "name": "Chicken or Kimchee",
@@ -175,7 +175,7 @@
         {
             "sections": [
                 {
-                    "section": [
+                    "items": [
                         {
                             "id": "27",
                             "name": "Chicken",
@@ -196,7 +196,7 @@
                 },
                 {
                     "description": "Served with steamed rice",
-                    "section": [
+                    "items": [
                         {
                             "id": "30",
                             "name": "Mongolian Beef",
@@ -250,7 +250,7 @@
         {
             "sections": [
                 {
-                    "section": [
+                    "items": [
                         {
                             "description": "Korean spicy noodle soup",
                             "id": "01",
@@ -275,7 +275,7 @@
                     "title": "Noodle Soup"
                 },
                 {
-                    "section": [
+                    "items": [
                         {
                             "id": "03",
                             "name": "Large Chinese Chicken Salad",
@@ -304,7 +304,7 @@
         {
             "sections": [
                 {
-                    "section": [
+                    "items": [
                         {
                             "name": "Prawn Tempura 5 pieces",
                             "price": 5.99

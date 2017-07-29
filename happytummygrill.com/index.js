@@ -3,7 +3,7 @@
     'use strict';
 
     var PREFIX_BUTTON = 'btn-';
-    var PREFIX_TABLE = 'tbl-';
+    var PREFIX_MENU = 'menu-';
 
     var menuSections = [
         'teriyaki-combinations',
@@ -20,26 +20,85 @@
             document.getElementById(PREFIX_BUTTON + menuSections[i]).addEventListener('click', clickMenuButton);
         }
 
-        http('GET', 'resources/menu.json', function () {
-            console.log(this.responseText);
-        });
+        http('GET', 'resources/menu.json', menuGenerator);
     });
 
     function clickMenuButton() {
         var clickedId = this.id;
-        var selectedId = PREFIX_BUTTON + menuSections[selectedMenuSectionIndex];
+        //var selectedId = PREFIX_BUTTON + menuSections[selectedMenuSectionIndex];
 
-        if (clickedId !== selectedId) {
-            document.getElementById(selectedId).classList.remove('menu-btn-selected');
+        var selected = menuSections[selectedMenuSectionIndex];
+        var selectedButtonId = PREFIX_BUTTON + selected;
+
+        if (clickedId !== selectedButtonId) {
+            var selectedSectionId = PREFIX_MENU + selected;
+
+            document.getElementById(selectedButtonId).classList.remove('menu-btn-selected');
+            document.getElementById(selectedSectionId).classList.remove('menu-section-selected');
+
             this.classList.add('menu-btn-selected');
+
             selectedMenuSectionIndex = menuSections.indexOf(clickedId.substr(PREFIX_BUTTON.length));
+
+            document.getElementById(PREFIX_MENU + menuSections[selectedMenuSectionIndex]).classList.add('menu-section-selected');
         }
     }
 
     function http(method, url, callback) {
         var xhr = new XMLHttpRequest();
         xhr.open(method, url);
-        xhr.onreadystatechange = callback;
+        xhr.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                callback(this.responseText);
+            }
+        };
         xhr.send();
+    }
+
+    function menuGenerator(response) {
+        var menu = JSON.parse(response).menu;
+        for (var i = 0; i < menu.length; i++) {
+            var menuSection = document.getElementById(PREFIX_MENU + menuSections[i]);
+            for (var j = 0; j < menu[i].sections.length; j++) {
+                var section = menu[i].sections[j];
+
+                var title = document.createElement('h2');
+                title.innerText = section.title;
+                menuSection.appendChild(title);
+
+                if (section.description) {
+                    var description = document.createElement('h3');
+                    description.innerText = section.description;
+                    menuSection.appendChild(description);
+                }
+
+                var table = document.createElement('table');
+                for (var k = 0; k < section.items.length; k++) {
+                    var item = section.items[k];
+
+                    var row = document.createElement('tr');
+
+                    var name = document.createElement('td');
+                    var price = document.createElement('td');
+
+                    var nameText = item.name;
+                    if (item.description) {
+                        nameText = nameText + ' (' + item.description + ')';
+                    }
+                    if (item.id) {
+                        nameText = item.id + '. ' + nameText;
+                    }
+
+                    name.innerText = nameText;
+                    price.innerText = item.price.toFixed(2);
+
+                    row.appendChild(name);
+                    row.appendChild(price);
+
+                    table.appendChild(row);
+                }
+                menuSection.appendChild(table);
+            }
+        }
     }
 })();

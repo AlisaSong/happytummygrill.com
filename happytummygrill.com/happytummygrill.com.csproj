@@ -68,7 +68,10 @@
     <Content Include="images\logo-main.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="resources\menu.json" />
+    <Content Include="fonts\fareast.ttf" />
+    <None Include="resources\menu.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <Content Include="resources\menu.txt" />
     <Content Include="styles.css" />
     <Content Include="images\favicon.ico">
