@@ -113,6 +113,15 @@ ul li {
     opacity: 1;
 }
 
+.menu-divider {
+    font-family: fareast;
+    font-size: 18px;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 75%;
+}
+
 .menu-section {
     display: none;
 }

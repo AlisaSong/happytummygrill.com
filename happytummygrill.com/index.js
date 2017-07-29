@@ -2,6 +2,7 @@
 
     'use strict';
 
+    var COUNT_CHOPSTICKS = 100;
     var PREFIX_BUTTON = 'btn-';
     var PREFIX_MENU = 'menu-';
 
@@ -20,7 +21,9 @@
             document.getElementById(PREFIX_BUTTON + menuSections[i]).addEventListener('click', clickMenuButton);
         }
 
-        http('GET', 'resources/menu.json', menuGenerator);
+        generateDivider(document.getElementById('menu-divider'));
+
+        http('GET', 'resources/menu.json', generateMenu);
     });
 
     function clickMenuButton() {
@@ -55,7 +58,20 @@
         xhr.send();
     }
 
-    function menuGenerator(response) {
+    function generateDivider(parent) {
+        var content = '';
+        for (var i = 0; i < COUNT_CHOPSTICKS; i++) {
+            content += 'X ';
+        }
+
+        var divider = document.createElement('div');
+        divider.classList.add('menu-divider');
+        divider.innerText = content;
+
+        parent.appendChild(divider);
+    }
+
+    function generateMenu(response) {
         var menu = JSON.parse(response).menu;
         for (var i = 0; i < menu.length; i++) {
             var menuSection = document.getElementById(PREFIX_MENU + menuSections[i]);
@@ -100,5 +116,7 @@
                 menuSection.appendChild(table);
             }
         }
+
+        generateDivider(document.getElementById('menu-wrapper'));
     }
 })();
