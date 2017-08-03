@@ -21,7 +21,8 @@
             document.getElementById(PREFIX_BUTTON + menuSections[i]).addEventListener('click', clickMenuButton);
         }
 
-        generateDivider(document.getElementById('menu-divider'));
+        generateDivider(document.getElementById('menu-divider1'));
+        generateDivider(document.getElementById('menu-divider2'));
 
         http('GET', 'resources/menu.json', generateMenu);
     });
@@ -116,7 +117,5 @@
                 menuSection.appendChild(table);
             }
         }
-
-        generateDivider(document.getElementById('menu-wrapper'));
     }
 })();

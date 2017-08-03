@@ -11,6 +11,18 @@ body {
     text-align: center;
 }
 
+h2 {
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
+
+h3 {
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 0px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -19,6 +31,18 @@ ul {
 
 ul li {
     display: inline;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    font-size: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #faf4f5;
 }
 
 #logo-main {
@@ -39,6 +63,13 @@ ul li {
     height: 120px;
     margin: 0 auto;
     width: 75%;
+}
+
+#menu-wrapper {
+    margin: 0 auto 20px auto;
+    max-width: 900px;
+    text-align: left;
+    width: 100%;
 }
 
 #navigation {
