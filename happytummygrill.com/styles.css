@@ -45,6 +45,22 @@ tr:nth-child(even) {
     background-color: #faf4f5;
 }
 
+#contact {
+    background-color: #fff;
+    bottom: 0;
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 10;
+}
+
+#contact-wrapper {
+    margin: 0 auto;
+    width: 500px;
+}
+
 #logo-main {
     height: 55px;
     width: auto;
