@@ -11,6 +11,11 @@ body {
     text-align: center;
 }
 
+h1 {
+    font-family: Abel, sans-serif;
+    font-size: 10vmin;
+}
+
 h2 {
     font-weight: normal;
     margin-bottom: 0px;
@@ -21,16 +26,6 @@ h3 {
     font-weight: normal;
     font-style: italic;
     margin: 0;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-ul li {
-    display: inline;
 }
 
 table {
@@ -59,6 +54,21 @@ tr {
 
 tr:nth-child(odd) {
     background-color: #faf4f5;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+}
+
+#about {
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    margin: 3px;
 }
 
 #contact {
@@ -203,6 +213,10 @@ tr:nth-child(odd) {
 
 .menu-section-selected{
     display: block;
+}
+
+.subtitle {
+    font-size: 18px;
 }
 
 @font-face {
