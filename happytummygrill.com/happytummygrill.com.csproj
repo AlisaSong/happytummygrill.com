@@ -69,9 +69,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="fonts\fareast.ttf" />
+    <Content Include="fonts\Abel-Regular.ttf" />
     <None Include="resources\menu.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Content Include="images\teriyaki.jpg" />
     <Content Include="resources\menu.txt" />
     <Content Include="styles.css" />
     <Content Include="images\favicon.ico">
