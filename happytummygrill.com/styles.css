@@ -5,6 +5,7 @@
 }
 
 body {
+    background-color: #FAFAFA;
     font-family: Habibi, sans-serif;
     font-size: 14px;
     margin: 55px 0 0 0;
@@ -66,30 +67,8 @@ ul li {
     display: inline;
 }
 
-#about {
-    border-bottom: 1px solid rgba(0,0,0,0.5);
-    margin: 3px;
-}
-
-#contact {
-    border-bottom: 1px solid rgba(0,0,0,0.5);
-    margin: 3px;
-}
-
 #footer {
-    background-color: #fff;
-    bottom: 0;
-    font-size: 18px;
-    height: 60px;
-    line-height: 60px;
-    white-space: nowrap;
-    width: 100%;
-    z-index: 10;
-}
 
-#footer-wrapper {
-    margin: 0 auto;
-    width: 500px;
 }
 
 #logo-main {
@@ -157,6 +136,14 @@ ul li {
     white-space: nowrap;
     width: 100%;
     z-index: 10;
+}
+
+.about-item {
+    margin: 1px auto;
+}
+
+.about-item-last {
+    margin-top: 1px;
 }
 
 .hvr-grow {
