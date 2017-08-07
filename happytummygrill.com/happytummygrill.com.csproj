@@ -65,6 +65,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\fried-rice.jpg" />
     <Content Include="images\logo-main.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

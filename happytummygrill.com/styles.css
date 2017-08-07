@@ -72,6 +72,11 @@ ul li {
 }
 
 #contact {
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    margin: 3px;
+}
+
+#footer {
     background-color: #fff;
     bottom: 0;
     font-size: 18px;
@@ -82,7 +87,7 @@ ul li {
     z-index: 10;
 }
 
-#contact-wrapper {
+#footer-wrapper {
     margin: 0 auto;
     width: 500px;
 }
@@ -95,10 +100,6 @@ ul li {
 #logo-wrapper {
     float: left;
     padding: 2px 7% 3px 0;
-}
-
-#main-photo {
-    width: 100%;
 }
 
 #menu-btn-wrapper {
@@ -213,6 +214,10 @@ ul li {
 
 .menu-section-selected {
     display: block;
+}
+
+.photo {
+    width: 100%;
 }
 
 .section:before {
