@@ -110,10 +110,10 @@ ul li {
 }
 
 #menu-btn-wrapper li {
-    border-right: 2px solid #faf4f5;
+    border-right: 2px solid #d8a1a7;
 }
 
-#menu-btn-wrapper li:last-child{
+#menu-btn-wrapper li:last-child {
     border-right: none;
 }
 
@@ -211,8 +211,16 @@ ul li {
     display: none;
 }
 
-.menu-section-selected{
+.menu-section-selected {
     display: block;
+}
+
+.section:before {
+    content: " ";
+    display: block;
+    height: 61px;
+    margin-top: -61px;
+    visibility: hidden;
 }
 
 .subtitle {
@@ -258,6 +266,7 @@ ul li {
     #navigation {
         font-size: 16px;
     }
+
     #navigation-options {
         width: 100%;
     }
