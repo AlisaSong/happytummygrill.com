@@ -18,12 +18,19 @@ h1 {
 }
 
 h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 18px;
     font-weight: normal;
     margin-bottom: 0px;
     margin-top: 25px;
 }
 
-h3 {
+h4 {
+    font-size: 14px;
     font-weight: normal;
     font-style: italic;
     margin: 0;
@@ -68,7 +75,9 @@ ul li {
 }
 
 #footer {
-
+    background-color: #c77781;
+    font-size: 16px;
+    height: 270px;
 }
 
 #logo-main {
@@ -79,6 +88,10 @@ ul li {
 #logo-wrapper {
     float: left;
     padding: 2px 7% 3px 0;
+}
+
+#menu {
+    padding-bottom: 100px;
 }
 
 #menu-btn-wrapper {
@@ -208,6 +221,7 @@ ul li {
 }
 
 .section:before {
+    background-color: none;
     content: " ";
     display: block;
     height: 61px;

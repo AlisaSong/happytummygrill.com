@@ -79,12 +79,12 @@
             for (var j = 0; j < menu[i].sections.length; j++) {
                 var section = menu[i].sections[j];
 
-                var title = document.createElement('h2');
+                var title = document.createElement('h3');
                 title.innerText = section.title;
                 menuSection.appendChild(title);
 
                 if (section.description) {
-                    var description = document.createElement('h3');
+                    var description = document.createElement('h4');
                     description.innerText = section.description;
                     menuSection.appendChild(description);
                 }
